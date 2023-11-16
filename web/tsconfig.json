@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.root.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react",
+    "outDir": "build"
+  }
+}
