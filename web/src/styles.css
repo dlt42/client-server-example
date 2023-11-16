@@ -250,7 +250,7 @@ select {
   box-sizing: border-box;
 }
 
-details > p > div.filters {
+details > p > span.filters {
   background-color: var(--color-gray-700);
   color: #ffffff;
   display: flex;
@@ -261,7 +261,7 @@ details > p > div.filters {
   border-radius: 4px;
 }
 
-details > p > div.filters > div {
+details > p > span.filters > span {
   display: flex;
   flex-direction: column;
 }

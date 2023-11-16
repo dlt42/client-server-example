@@ -102,12 +102,12 @@ describe('App', () => {
 
     await waitFor(() => {
       const firstMessage = screen.queryByText('Hello Saturn!');
-      const firstVisibility = within(firstMessage?.parentElement!).queryByText('private');
+      const firstVisibility = within(firstMessage?.parentElement!).queryByText('🫥');
       expect(firstMessage).toBeInTheDocument();
       expect(firstVisibility).toBeInTheDocument();
 
       const secondMessage = screen.queryByText('Hello Jupiter!');
-      const secondVisibility = within(secondMessage?.parentElement!).queryByText('public');
+      const secondVisibility = within(secondMessage?.parentElement!).queryByText('🙂');
       expect(secondMessage).toBeInTheDocument();
       expect(secondVisibility).toBeInTheDocument();
     });

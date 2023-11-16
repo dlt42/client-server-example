@@ -9,8 +9,8 @@ export const Filters = () => {
       <details>
         <summary>Filters</summary>
         <p>
-          <div className="filters">
-            <div>
+          <span className="filters">
+            <span>
               <span>Visibility</span>
               <select onChange={visibility.onFilterChange} defaultValue={visibility.filter.value}>
                 <option key="all" value={''}>
@@ -23,8 +23,8 @@ export const Filters = () => {
                   Private
                 </option>
               </select>
-            </div>
-            <div>
+            </span>
+            <span>
               <span>Liked</span>
               <select onChange={liked.onFilterChange} defaultValue={liked.filter.value}>
                 <option key="all" value={''}>
@@ -37,8 +37,8 @@ export const Filters = () => {
                   Not Liked
                 </option>
               </select>
-            </div>
-          </div>
+            </span>
+          </span>
         </p>
       </details>
     </div>
